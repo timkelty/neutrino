@@ -1,0 +1,904 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>copy · Neutrino</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-npmsearchlist/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../neutrino-middleware-env/" />
+    
+    
+    <link rel="prev" href="../neutrino-middleware-compile-loader/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../installation.html">
+            
+                <a href="../../installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../usage.html">
+            
+                <a href="../../usage.html">
+            
+                    
+                    Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../project-layout.html">
+            
+                <a href="../../project-layout.html">
+            
+                    
+                    Project Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../FAQ.html">
+            
+                <a href="../../FAQ.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../presets/">
+            
+                <a href="../../presets/">
+            
+                    
+                    Presets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../presets/neutrino-preset-web/">
+            
+                <a href="../../presets/neutrino-preset-web/">
+            
+                    
+                    Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../presets/neutrino-preset-react/">
+            
+                <a href="../../presets/neutrino-preset-react/">
+            
+                    
+                    React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../presets/neutrino-preset-node/">
+            
+                <a href="../../presets/neutrino-preset-node/">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../presets/neutrino-preset-airbnb-base/">
+            
+                <a href="../../presets/neutrino-preset-airbnb-base/">
+            
+                    
+                    Airbnb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../presets/neutrino-preset-karma/">
+            
+                <a href="../../presets/neutrino-preset-karma/">
+            
+                    
+                    Karma
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../presets/neutrino-preset-mocha/">
+            
+                <a href="../../presets/neutrino-preset-mocha/">
+            
+                    
+                    Mocha
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../presets/neutrino-preset-jest/">
+            
+                <a href="../../presets/neutrino-preset-jest/">
+            
+                    
+                    Jest
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../presets/community-presets.html">
+            
+                <a href="../../presets/community-presets.html">
+            
+                    
+                    Community presets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Middleware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../neutrino-middleware-banner/">
+            
+                <a href="../neutrino-middleware-banner/">
+            
+                    
+                    banner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../neutrino-middleware-chunk/">
+            
+                <a href="../neutrino-middleware-chunk/">
+            
+                    
+                    chunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../neutrino-middleware-clean/">
+            
+                <a href="../neutrino-middleware-clean/">
+            
+                    
+                    clean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../neutrino-middleware-compile-loader/">
+            
+                <a href="../neutrino-middleware-compile-loader/">
+            
+                    
+                    compile-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    copy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../neutrino-middleware-env/">
+            
+                <a href="../neutrino-middleware-env/">
+            
+                    
+                    env
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../neutrino-middleware-eslint/">
+            
+                <a href="../neutrino-middleware-eslint/">
+            
+                    
+                    eslint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../neutrino-middleware-font-loader/">
+            
+                <a href="../neutrino-middleware-font-loader/">
+            
+                    
+                    font-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../neutrino-middleware-hot/">
+            
+                <a href="../neutrino-middleware-hot/">
+            
+                    
+                    hot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../neutrino-middleware-html-loader/">
+            
+                <a href="../neutrino-middleware-html-loader/">
+            
+                    
+                    html-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../neutrino-middleware-html-template/">
+            
+                <a href="../neutrino-middleware-html-template/">
+            
+                    
+                    html-template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.12" data-path="../neutrino-middleware-image-loader/">
+            
+                <a href="../neutrino-middleware-image-loader/">
+            
+                    
+                    image-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.13" data-path="../neutrino-middleware-loader-merge/">
+            
+                <a href="../neutrino-middleware-loader-merge/">
+            
+                    
+                    loader-merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.14" data-path="../neutrino-middleware-minify/">
+            
+                <a href="../neutrino-middleware-minify/">
+            
+                    
+                    minify
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.15" data-path="../neutrino-middleware-named-modules/">
+            
+                <a href="../neutrino-middleware-named-modules/">
+            
+                    
+                    named-modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.16" data-path="../neutrino-middleware-named-start-server/README.md">
+            
+                <span>
+            
+                    
+                    start-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.17" data-path="../neutrino-middleware-named-style-loader/README.md">
+            
+                <span>
+            
+                    
+                    style-loader
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../customization/">
+            
+                <a href="../../customization/">
+            
+                    
+                    Customization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../customization/simple.html">
+            
+                <a href="../../customization/simple.html">
+            
+                    
+                    Simple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../customization/advanced.html">
+            
+                <a href="../../customization/advanced.html">
+            
+                    
+                    Advanced
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../creating-presets.html">
+            
+                <a href="../../creating-presets.html">
+            
+                    
+                    Creating presets
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../presets/neutrino-lint-base/README.md">
+            
+                <span>
+            
+                    
+                    Creating linting presets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../learning-resources.html">
+            
+                <a href="../../learning-resources.html">
+            
+                    
+                    Learning Resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../api/">
+            
+                <a href="../../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../cli/">
+            
+                <a href="../../cli/">
+            
+                    
+                    CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../upgrading-neutrino.html">
+            
+                <a href="../../upgrading-neutrino.html">
+            
+                    
+                    Upgrading from v4 to v5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <a target="_blank" href="https://github.com/mozilla-neutrino/neutrino-dev/tree/docs-v4/docs">
+            
+                    
+                    v4 Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../contributing/">
+            
+                <a href="../../contributing/">
+            
+                    
+                    Contributing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../contributing/development.html">
+            
+                <a href="../../contributing/development.html">
+            
+                    
+                    Development Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../../contributing/code-of-conduct.html">
+            
+                <a href="../../contributing/code-of-conduct.html">
+            
+                    
+                    Code of Conduct
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >copy</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="neutrino-copy-middleware">Neutrino Copy Middleware</h1>
+<p><a href="https://npmjs.org/package/neutrino-middleware-copy" target="_blank"><img src="https://img.shields.io/npm/v/neutrino-middleware-copy.svg" alt="NPM version"></a> <a href="https://npmjs.org/package/neutrino-middleware-copy" target="_blank"><img src="https://img.shields.io/npm/dt/neutrino-middleware-copy.svg" alt="NPM downloads"></a> <a href="https://neutrino-slack.herokuapp.com/" target="_blank"><img src="https://neutrino-slack.herokuapp.com/badge.svg" alt="Join Slack"></a></p>
+<p><code>neutrino-middleware-copy</code> is Neutrino middleware for copying files during building.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Node.js v6.9+</li>
+<li>Yarn or npm client</li>
+<li>Neutrino v5</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p><code>neutrino-middleware-copy</code> can be installed via the Yarn or npm clients.</p>
+<h4 id="yarn">Yarn</h4>
+<pre class="language-"><code class="lang-bash">&#x276F; yarn add neutrino-middleware-copy
+</code></pre>
+<h4 id="npm">npm</h4>
+<pre class="language-"><code class="lang-bash">&#x276F; <span class="token function">npm</span> <span class="token function">install</span> --save neutrino-middleware-copy
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p><code>neutrino-middleware-copy</code> can be consumed from the Neutrino API, middleware, or presets. Require this package
+and plug it into Neutrino:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">const</span> copy <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;neutrino-middleware-copy&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Use with default options</span>
+neutrino<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>copy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Usage shows the default values of this middleware:</span>
+neutrino<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>copy<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  patterns<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  options<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The <code>patterns</code> and <code>options</code> are defined from the <a href="https://github.com/kevlened/copy-webpack-plugin" target="_blank">CopyWebpackPlugin</a>.
+See their docs for details on valid values to specify.</p>
+<ul>
+<li><code>patterns</code>: An array of patterns specifying copy operations.</li>
+<li><code>options</code>: An object specifying copy options.</li>
+</ul>
+<h2 id="customization">Customization</h2>
+<p><code>neutrino-middleware-copy</code> creates some conventions to make overriding the configuration easier once you are ready to
+make changes.</p>
+<h3 id="plugins">Plugins</h3>
+<p>The following is a list of plugins and their identifiers which can be overridden:</p>
+<ul>
+<li><code>copy</code>: Copy files during building.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>This preset is part of the <a href="https://github.com/mozilla-neutrino/neutrino-dev" target="_blank">neutrino-dev</a> repository, a monorepo
+containing all resources for developing Neutrino and its core presets. Follow the
+<a href="../../contributing/">contributing guide</a> for details.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../neutrino-middleware-compile-loader/" class="navigation navigation-prev " aria-label="Previous page: compile-loader">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../neutrino-middleware-env/" class="navigation navigation-next " aria-label="Next page: env">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"copy","level":"1.7.5","depth":2,"next":{"title":"env","level":"1.7.6","depth":2,"path":"middleware/neutrino-middleware-env/README.md","ref":"./middleware/neutrino-middleware-env/README.md","articles":[]},"previous":{"title":"compile-loader","level":"1.7.4","depth":2,"path":"middleware/neutrino-middleware-compile-loader/README.md","ref":"./middleware/neutrino-middleware-compile-loader/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","npmsearchlist"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/mozilla-neutrino/neutrino-dev/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"npmsearchlist":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit page","base":"https://github.com/mozilla-neutrino/neutrino-dev/tree/master/docs"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Neutrino","gitbook":"*"},"file":{"path":"middleware/neutrino-middleware-copy/README.md","mtime":"2017-03-08T20:46:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-24T23:38:39.068Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-npmsearchlist/script.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
